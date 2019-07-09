@@ -1,0 +1,212 @@
+<nav id="navbar">
+    <header>JS Documentation</header>
+    <ul>
+        <li>
+            <a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+            <a class="nav-link" href="#What_you_should_already_know">
+            What you should already know</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Hello_World">Hello world</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Variables">Variables</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Declaring_variables">Declaring variables</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Variable_scope">Variable scope</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Constants">Constants</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Data_types">Data types</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#if...else_statement">if...else statement</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#while_statement">while statement</a></li>
+        <li>
+            <a class="nav-link" href="#Function_declarations">Function declarations</a>
+        </li>
+        <li>
+        <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+    </ul>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+            <p>
+                Java is a general-purpose programming language that is class-based,
+                object-oriented (although not a pure OO language, as it contains
+                primitive types), and designed to have as few implementation
+                dependencies as possible. It is intended to let application developers
+                write once, run anywhere (WORA), meaning that compiled Java code
+                can run on all platforms that support Java without the need for recompilation.
+                Java applications are typically compiled to bytecode that can
+                run on any Java virtual machine (JVM) regardless of the underlying
+                computer architecture. The syntax of Java is similar to C and C++,
+                but it has fewer low-level facilities than either of them.
+                As of 2018, Java was one of the most popular programming
+                languages in use according to GitHub, particularly for
+                client-server web applications, with a reported 9 million developers.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="What_you_should_already_know">
+    <header>What you should already know:</header>
+    <article>
+      <p>This guide assumes you have the following basic background:</p>
+
+      <ul>
+        <li>
+          A general understanding of the Internet and the World Wide Web (WWW).
+        </li>
+        <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+        <li>
+          Some programming experience. If you are new to programming, try one of
+          the tutorials linked on the main page about JavaScript.
+        </li>
+      </ul>
+        </article>
+    </section>
+    <section class="main-section" id="JavaScript_and_Java">
+    <header>JavaScript and Java</header>
+    <article>
+      <p>
+        JavaScript and Java are similar in some ways but fundamentally different
+        in some others. The JavaScript language resembles Java but does not have
+        Java's static typing and strong type checking. JavaScript follows most
+        Java expression syntax, naming conventions and basic control-flow
+        constructs which was the reason why it was renamed from LiveScript to
+        JavaScript.
+      </p>
+
+      <p>
+        In contrast to Java's compile-time system of classes built by
+        declarations, JavaScript supports a runtime system based on a small
+        number of data types representing numeric, Boolean, and string values.
+        JavaScript has a prototype-based object model instead of the more common
+        class-based object model. The prototype-based model provides dynamic
+        inheritance; that is, what is inherited can vary for individual objects.
+        JavaScript also supports functions without any special declarative
+        requirements. Functions can be properties of objects, executing as
+        loosely typed methods.
+      </p>
+      <p>
+        JavaScript is a very free-form language compared to Java. You do not
+        have to declare all variables, classes, and methods. You do not have to
+        be concerned with whether methods are public, private, or protected, and
+        you do not have to implement interfaces. Variables, parameters, and
+        function return types are not explicitly typed.
+      </p>
+    </article>
+  </section>
+  <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <article>
+          <p>Here is your first Java program hello world:</p>
+          <p><code
+          >public class HelloWorld {
+                public static void main(String[] args) {
+                // Prints "Hello, World" to the terminal window.
+                System.out.println("Hello, World");
+    }
+}
+          </code>
+          </p>
+      </article>
+  </section>
+    <section class="main_section" id="Variables">
+        <header>Variables</header>
+        <article>
+        <p>
+            A variable is a container which holds the value while the java program is executed. A variable is assigned with a datatype.
+            Variable is a name of memory location. There are three types of variables in java: local, instance and static.
+            There are two types of data types in java: primitive and non-primitive. Please see the example of variables below:
+        </p>
+            <p><code>int a = 1; float b = 2.2 boolean c = true;</code></p>
+        </article>
+    </section>
+    <section class="main-section" id="Declaring_variables">
+        <header>Declaring Variables</header>
+        <article>
+            <p>
+                Java is a strongly typed programming language. This means that every variable must have a data type associated with it.
+                For example, a variable could be declared to use one of the eight primitive data types: byte, short, int, long, float, double, char or boolean.
+                A good analogy for a variable is to think of a bucket. We can fill it to a certain level, we can replace what's inside it, and sometimes we can add or take
+                something away from it. When we declare a variable to use a data type it's like putting a label on the bucket that says what it can be filled with.
+                Let's say the label for the bucket is "Sand". Once the label is attached, we can only ever add or remove sand from the bucket. Anytime we try and put anything
+                else into it, we will get stopped by the bucket police. In Java, you can think of the compiler as the bucket police. It ensures that programmers declare and use variables properly.
+                To declare a variable in Java, all that is needed is the data type followed by the variable name:
+            </p>
+            <p><code>int numberOfVariables;</code></p>
+        </article>
+    </section>
+    <selection class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+            <p>
+                When you declare a variable outside of any function, it is called a
+        global variable, because it is available to any other code in the
+        current document. When you declare a variable within a function, it is
+        called a local variable, because it is available only within that
+        function.
+            </p>
+        </article>
+    </selection>
+    <section class="main-section" id="Global_variable">
+        <header>Global variables</header>
+        <article>
+            <p>
+                If you have experience with other programming languages, such as C and C++, you have probably used global variables. A global variable is one that is accessible to
+                all parts of a program and is usually declared as part of the first lines of code.
+                Java doesn't technically support global variables. As a pure object-oriented language,
+                everything needs to be part of a class. The reason is to protect data and members of classes from being changed,
+                inadvertently or on purpose, by other parts of the program.
+                However, you still may need to have variables that can be accessed across your program, and not confined to specific classes.
+            </p><p>
+            <code>public class Openclass {
+                public static double price = 15.24;
+                public static long pages = 1053;
+}</code></p>
+        </article>
+    </section>
+    <section class="main-section" id="Constants">
+        <header><p>Constants</p></header>
+        <article>
+            <p>
+                A constant is a variable whose value cannot change once it has
+                been assigned. Java doesn't have built-in support for constants,
+                but the variable modifiers static and final can be used to effectively create one.
+                Constants can make your program more easily read
+                and understood by others. In addition, a constant is cached by the JVM as well as your application, so using a constant can improve performance.
+            </p>
+        </article>
+    </section>
+    <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+            <p>
+            <li>byte</li>
+            <li>short</li>
+            <li>int</li>
+            <li>long</li>
+            <li>the floating-point types:</li>
+            <li>float</li>
+            <li>double</li>
+            </p></article>
+    </section>
+</main>
